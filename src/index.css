@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "dana";
+  src: url("/public/Fonts/Dana/woff2/DanaFaNum-Regular.woff2");
+}
+
+@font-face {
+  font-family: "danaMedium";
+  src: url("/public/Fonts/Dana/woff2/DanaFaNum-Medium.woff2");
+}
+
+@theme {
+  --font-dana: "dana";
+  --font-danaMedium: "danaMedium";
+}
+
+body {
+  @apply font-dana;
+}
