@@ -7,13 +7,13 @@ function IconsList() {
   return (
     <ul className="flex items-center gap-5">
       <li>
-        <RiHeart3Line />
+        <RiHeart3Line size={20}/>
       </li>
       <li>
-        <RiShoppingCart2Line />
+        <RiShoppingCart2Line size={20}/>
       </li>
       <li>
-        <FiUser />
+        <FiUser size={20}/>
       </li>
     </ul>
   );

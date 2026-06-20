@@ -5,12 +5,16 @@ import Input from "./components/Input";
 
 function Navbar() {
   return (
-    <nav className="h-15 flex justify-evenly items-center gap-10 px-20 py-2">
+    <nav className="hidden h-15 md:flex md:justify-center lg:justify-evenly items-center gap-10 lg:px-20 py-2 overflow-hidden">
       <IconsList />
       <List />
       <Input />
-      <div className="">
-        <img src="/Images/logo/Logo_dark.webp" alt="" width={65} height={22} />
+      <div className="flex shrink-0">
+        <img
+          src="/Images/logo/Logo_dark.webp"
+          alt="logo"
+          className="w-auto h-7"
+        />
       </div>
     </nav>
   );

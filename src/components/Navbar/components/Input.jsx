@@ -12,7 +12,7 @@ function Input() {
         placeholder="جستجو..."
         value={value}
         onChange={(e) => setValue(e.target.value)}
-        className="bg-transparent text-sm py-1.5 focus:outline-0 w-2xs"
+        className="bg-transparent text-sm py-1.5 focus:outline-0 w-full lg:w-2xs"
       />
     </label>
   );
