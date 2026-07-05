@@ -1,20 +1,83 @@
 @import "tailwindcss";
 
+:root {
+  --light-bg: #f8f9fa;
+
+  /*
+ هدر (Header)
+فوتر (Footer)
+منوی موبایل
+پس‌زمینه بخش Hero (در صورت استفاده از پس‌زمینه تیره)
+متن تیترهای روی پس‌زمینه روشن
+آیکون‌های اصلی
+*/
+  --priamry: #090040;
+
+  /* 
+دکمه‌های اصلی (Primary Button)
+تب فعال
+لینک‌های مهم
+آیکون‌های فعال
+عنوان کارت‌های ویژه
+*/
+  --secondary: #471396;
+
+  /*
+Hover دکمه‌ها
+Focus اینپوت‌ها
+Badge های "جدید"
+اسلایدرها
+لینک فعال در Navbar
+Progress Bar
+*/
+
+  --accent: #b13bff;
+  --accent2: #ffcc00;
+
+  --productCardBg: #ffffff;
+  --mainTitle: #1f2937;
+  --secondaryPassage: #6b7280;
+}
+
 @font-face {
   font-family: "dana";
   src: url("/public/Fonts/Dana/woff2/DanaFaNum-Regular.woff2");
 }
-
 @font-face {
   font-family: "danaMedium";
   src: url("/public/Fonts/Dana/woff2/DanaFaNum-Medium.woff2");
+}
+@font-face {
+  font-family: "morabbaLight";
+  src: url("/public/Fonts/Morabba/woff2/Morabba-Light.woff2");
+}
+@font-face {
+  font-family: "morabbaMedium";
+  src: url("/public/Fonts/Morabba/woff2/Morabba-Medium.woff2");
 }
 
 @theme {
   --font-dana: "dana";
   --font-danaMedium: "danaMedium";
+  --font-morabbaLight: "morabbaLight";
+  --font-morabbaMedium: "morabbaMedium";
+
+  --breakpoint-xs: 300px;
 }
 
 body {
+  background-color: var(--light-bg);
   @apply font-dana;
+}
+
+.btn {
+  background: linear-gradient(#9a7dff, #7c5cff);
+  box-shadow:
+    inset 1px 0px #0003,
+    0 4px #5b3fd0;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+.btn:hover {
+  box-shadow: none;
 }
