@@ -5,7 +5,7 @@ import { RiHeart3Line, RiShoppingCart2Line } from "react-icons/ri";
 
 function IconsList() {
   return (
-    <ul className="flex items-center gap-5">
+    <ul className="flex items-center gap-8">
       <li>
         <RiHeart3Line size={20}/>
       </li>

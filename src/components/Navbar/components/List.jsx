@@ -3,7 +3,7 @@ import { NavLink } from "react-router";
 
 function List() {
   return (
-    <ul className="flex items-center gap-5 text-sm text-gray-500 *:hover:text-black *:cursor-pointer *:text-nowrap *:transition-colors">
+    <ul className="flex items-center gap-8 text-sm text-gray-500 *:hover:text-black *:cursor-pointer *:text-nowrap *:transition-colors">
       <li>
         <NavLink
           to={"/"}
