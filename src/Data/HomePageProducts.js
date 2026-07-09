@@ -1,7 +1,7 @@
 export const homePageProducts = [
   {
     id: 1,
-    img: "/images/homePageProducts/airpods.png",
+    img: "/public/Images/homePageProducts/airpods.png",
     title: "ایرپاد پرو اپل",
     price: 12990000,
     saleCount: 324,
@@ -18,7 +18,7 @@ export const homePageProducts = [
   },
   {
     id: 2,
-    img: "/images/homePageProducts/camera.png",
+    img: "/public//images/homePageProducts/camera.png",
     title: "دوربین کانن EOS",
     price: 54900000,
     saleCount: 87,
@@ -34,7 +34,7 @@ export const homePageProducts = [
   },
   {
     id: 3,
-    img: "/images/homePageProducts/headphon.png",
+    img: "/public//images/homePageProducts/headphon.png",
     title: "هدفون بی‌سیم",
     price: 7490000,
     saleCount: 215,
@@ -51,7 +51,7 @@ export const homePageProducts = [
   },
   {
     id: 4,
-    img: "/images/homePageProducts/ipad.png",
+    img: "/public//images/homePageProducts/ipad.png",
     title: "آیپد ایر اپل",
     price: 42900000,
     saleCount: 142,
@@ -67,7 +67,7 @@ export const homePageProducts = [
   },
   {
     id: 5,
-    img: "/images/homePageProducts/Iphone 14 pro 1.png",
+    img: "/public//images/homePageProducts/Iphone 14 pro 1.png",
     title: "آیفون 14 پرو",
     price: 79900000,
     saleCount: 491,
@@ -84,7 +84,7 @@ export const homePageProducts = [
   },
   {
     id: 6,
-    img: "/images/homePageProducts/samsung.png",
+    img: "/public//images/homePageProducts/samsung.png",
     title: "سامسونگ گلکسی S24",
     price: 62900000,
     saleCount: 278,
@@ -100,7 +100,7 @@ export const homePageProducts = [
   },
   {
     id: 7,
-    img: "/images/homePageProducts/smart watch.png",
+    img: "/public//images/homePageProducts/smart watch.png",
     title: "ساعت هوشمند",
     price: 10900000,
     saleCount: 198,
@@ -117,7 +117,7 @@ export const homePageProducts = [
   },
   {
     id: 8,
-    img: "/images/homePageProducts/watch.png",
+    img: "/public//images/homePageProducts/watch.png",
     title: "ساعت مچی کلاسیک",
     price: 5990000,
     saleCount: 104,
