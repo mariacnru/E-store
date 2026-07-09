@@ -4,13 +4,13 @@ import { createContext, useState } from "react";
 
 export const WishlistContext = createContext();
 
-export function WishlistProvider({ children }) {
+function WishlistProvider({ children }) {
   const [wishlist, setWishlist] = useState([]);
 
   const toggleWishlist = (product) => {
-    const exists = wishlist.find((item) => item.id === product.id);
+    const isExist = wishlist.some((item) => item.id === product.id);
 
-    if (exists) {
+    if (isExist) {
       setWishlist(wishlist.filter((item) => item.id !== product.id));
     } else {
       setWishlist([...wishlist, product]);
@@ -28,3 +28,5 @@ export function WishlistProvider({ children }) {
     </WishlistContext.Provider>
   );
 }
+
+export default WishlistProvider;
