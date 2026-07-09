@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { RiHeartFill, RiHeartLine } from "react-icons/ri";
+import { WishlistContext } from "../../../../context/WishlistContext";
 
 function ProductCard({
   img,
@@ -11,6 +12,10 @@ function ProductCard({
   options,
 }) {
   const [like, setLike] = useState(false);
+
+  const { wishlist, toggleWishlist } = useContext(WishlistContext);
+
+  const isLiked = wishlist.some((item) => item.id === props.id);
 
   return (
     <div className="bg-gray-100 w-full py-5 px-2 rounded-lg">

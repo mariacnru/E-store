@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from "react";
 import homePageProducts from "../../../../Data/HomePageProducts";
 import ProductCard from "./ProductCard";
-import ProductsFilter from "./PruductsFilter";
+import ProductsFilter from "./ProductsFilter";
 
 function Products() {
   const [productsFilter, setProductsFilter] = useState("newArrival");
@@ -9,10 +9,14 @@ function Products() {
   const products = useMemo(() => {
     switch (productsFilter) {
       case "bestSeller":
-        return [...homePageProducts].sort((a, b) => b.saleCount - a.saleCount);
-
-      case "featuredProducts":
-        return homePageProducts.filter((product) => product.discount);
+        return [...homePageProducts]
+          .sort((a, b) => b.saleCount - a.saleCount)
+          .slice(0, 4);
+      case "discount":
+        return homePageProducts
+          .filter((product) => product.discount)
+          .sort((a, b) => b.discount - a.discount)
+          .slice(0, 4);
 
       case "newArrival":
       default:

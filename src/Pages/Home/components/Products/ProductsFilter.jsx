@@ -26,14 +26,14 @@ function ProductsFilter({ productsFilter, setFilter }) {
       </li>
 
       <li
-        onClick={() => setFilter("featuredProducts")}
+        onClick={() => setFilter("discount")}
         className={`${
-          productsFilter === "featuredProducts"
+          productsFilter === "discount"
             ? "font-danaMedium underline underline-offset-8"
             : ""
         } cursor-pointer transition-all`}
       >
-        محصولات ویژه
+        بیشترین تخفیف
       </li>
     </ul>
   );
