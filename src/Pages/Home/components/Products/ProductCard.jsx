@@ -18,7 +18,7 @@ function ProductCard({
 
   return (
     <div className="bg-gray-50 w-full py-5 px-2 rounded-lg border border-gray-200">
-      <span
+      <div
         onClick={() =>
           toggleWishlist({
             id,
@@ -31,12 +31,22 @@ function ProductCard({
             options,
           })
         }
-        className={`cursor-pointer ${
-          isLiked ? "text-rose-500" : "text-gray-400"
-        } bg-white block w-fit p-2 rounded-full shadow-lg`}
+        className="flex items-center gap-5"
       >
-        {isLiked ? <RiHeartFill size={20} /> : <RiHeartLine size={20} />}
-      </span>
+        <span
+          className={`cursor-pointer ${
+            isLiked ? "text-rose-500" : "text-gray-400"
+          } bg-white block w-fit p-2 rounded-full shadow-lg`}
+        >
+          {isLiked ? <RiHeartFill size={20} /> : <RiHeartLine size={20} />}
+        </span>
+
+        {discount && (
+          <span className="bg-zinc-100 text-zinc-700 text-xs px-2 py-1 rounded-md">
+            %{discount} OFF
+          </span>
+        )}
+      </div>
 
       <div className="flex flex-col items-center gap-2">
         <img src={img} alt={title} />

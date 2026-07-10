@@ -25,18 +25,20 @@ function Products() {
   }, [productsFilter]);
 
   return (
-    <div className="px-30 py-10 bg-white">
-      <ProductsFilter
-        productsFilter={productsFilter}
-        setFilter={setProductsFilter}
-      />
+    <section className="md:px-27 my-24 px-4 bg-white">
+      <div className="px-auto max-w-7xl py-10">
+        <ProductsFilter
+          productsFilter={productsFilter}
+          setFilter={setProductsFilter}
+        />
 
-      <div className="grid grid-cols-4 gap-6">
-        {products.map((product) => (
-          <ProductCard key={product.id} {...product} />
-        ))}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {products.map((product) => (
+            <ProductCard key={product.id} {...product} />
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 

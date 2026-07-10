@@ -3,20 +3,33 @@ import { categories } from "../../../../Data/Constants";
 import CategorieCard from "./CategorieCard";
 
 function Categories() {
-  const [data, setData] = useState(categories);
+  const [data] = useState(categories);
 
   return (
-    <div className="px-27 my-20">
-      <div className="mb-10 font-danaMedium">
-        <h3 className="">جستجو بر اساس دسته بندی</h3>
-      </div>
+    <section className="md:mx-27 my-24 px-4">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-10 flex items-center justify-between">
+          <div>
+            <h3 className="text-2xl font-danaBold text-zinc-900">
+              جستجو بر اساس دسته‌بندی
+            </h3>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 justify-self-center gap-5">
-        {data.map((item) => (
-          <CategorieCard key={item.id} {...item} />
-        ))}
+            <p className="mt-2 text-sm text-gray-500">
+              دسته مورد نظر خود را انتخاب کنید
+            </p>
+          </div>
+        </div>
+
+        <div
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-5
+          "
+        >
+          {data.map((item) => (
+            <CategorieCard key={item.id} {...item} />
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 
