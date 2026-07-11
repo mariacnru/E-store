@@ -7,14 +7,23 @@ function List() {
       <li>
         <NavLink
           to={"/"}
-          className={(isActive) =>
+          className={({ isActive }) =>
             isActive ? "text-black font-danaMedium" : "text-gray-500"
           }
         >
           خانه
         </NavLink>
       </li>
-      <li>درباره ما</li>
+      <li>
+        <NavLink
+          to={"about"}
+          className={({ isActive }) =>
+            isActive ? "text-black font-danaMedium" : "text-gray-500"
+          }
+        >
+          درباره ما
+        </NavLink>
+      </li>
       <li>ارتباط با ما</li>
       <li>بلاگ</li>
     </ul>

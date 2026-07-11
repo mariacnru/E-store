@@ -5,7 +5,7 @@ import Input from "./components/Input";
 
 function Navbar() {
   return (
-    <nav className="hidden h-15 md:flex md:justify-center lg:justify-evenly items-center lg:px-20 py-2">
+    <nav className="hidden h-15 md:flex md:justify-center lg:justify-evenly items-center lg:px-20 py-2 border-b border-gray-200">
       <IconsList />
       <List />
       <Input />
