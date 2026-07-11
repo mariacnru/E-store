@@ -1,6 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router";
 import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 
 function EstoreLayout() {
   return (
@@ -9,6 +10,7 @@ function EstoreLayout() {
       <main>
         <Outlet />
       </main>
+      <Footer />
     </section>
   );
 }

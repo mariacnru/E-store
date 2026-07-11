@@ -6,7 +6,7 @@ import WishlistProvider from "./context/WishlistContext";
 function App() {
   return (
     <WishlistProvider>
-      <RouterProvider router={router}></RouterProvider>;
+      <RouterProvider router={router}></RouterProvider>
     </WishlistProvider>
   );
 }
