@@ -13,6 +13,7 @@ import {
 } from "react-icons/ri";
 import Color from "./components/Color";
 import Variants from "./components/Variants";
+import Price from "./components/Price";
 
 function ProductDetails() {
   const { productID } = useParams();
@@ -134,25 +135,7 @@ function ProductDetails() {
           />
 
           {/* Price */}
-          <div className="mt-10 flex items-center gap-4">
-            <span className="text-4xl font-bold">
-              {finalPrice.toLocaleString()}
-            </span>
-
-            <span className="text-lg">تومان</span>
-
-            {discount && (
-              <>
-                <span className="text-zinc-400 line-through">
-                  {price.toLocaleString()}
-                </span>
-
-                <span className="bg-red-100 text-red-500 px-2 py-1 rounded-lg text-sm">
-                  %{discount}
-                </span>
-              </>
-            )}
-          </div>
+          <Price price={price} finalPrice={finalPrice} discount={discount} />
 
           {/* Quantity */}
           <div className="mt-8 flex items-center gap-4">
