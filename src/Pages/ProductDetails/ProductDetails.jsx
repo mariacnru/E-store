@@ -12,6 +12,7 @@ import {
   RiRefreshLine,
 } from "react-icons/ri";
 import Color from "./components/Color";
+import Variants from "./components/Variants";
 
 function ProductDetails() {
   const { productID } = useParams();
@@ -47,7 +48,7 @@ function ProductDetails() {
   const [activeImage, setActiveImage] = useState(gallery[0]);
   const [selectedVariant, setSelectedVariant] = useState(variants[0]);
   const [quantity, setQuantity] = useState(1);
-  const [selectedColor, setSelectedColor] = useState(false);
+  const [selectedColor, setSelectedColor] = useState(null);
 
   const finalPrice = discount
     ? Math.floor(price - (price * discount) / 100)
@@ -123,28 +124,14 @@ function ProductDetails() {
           <p className="mt-8 text-zinc-600 leading-8">{description}</p>
 
           {/* Select Color */}
-          <Color colors={product.colors} />
+          <Color colors={product.colors} setSelectedColor={setSelectedColor} />
 
           {/* Variants */}
-          <div className="mt-8">
-            <h3 className="font-medium mb-4">انتخاب مدل</h3>
-
-            <div className="flex flex-wrap gap-3">
-              {variants.map((variant) => (
-                <button
-                  key={variant}
-                  onClick={() => setSelectedVariant(variant)}
-                  className={`px-4 py-2 rounded-xl border transition-all ${
-                    selectedVariant === variant
-                      ? "border-violet-600 bg-violet-50 text-violet-600"
-                      : "border-zinc-200"
-                  }`}
-                >
-                  {variant}
-                </button>
-              ))}
-            </div>
-          </div>
+          <Variants
+            variants={variants}
+            selectedVariant={selectedVariant}
+            setSelectedVariant={setSelectedVariant}
+          />
 
           {/* Price */}
           <div className="mt-10 flex items-center gap-4">

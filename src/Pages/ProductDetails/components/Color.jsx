@@ -1,6 +1,6 @@
 import React from "react";
 
-function Color({ colors }) {
+function Color({ colors, setSelectedColor }) {
   return (
     <div className="flex items-center gap-5">
       <h3 className="">انتخاب رنگ:</h3>
@@ -11,6 +11,7 @@ function Color({ colors }) {
               type="radio"
               name="product-color"
               value={color.value}
+              onChange={(e) => setSelectedColor(e.target.value)}
               className="hidden peer"
             />
 
