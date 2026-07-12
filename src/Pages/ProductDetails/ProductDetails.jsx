@@ -11,6 +11,7 @@ import {
   RiTruckLine,
   RiRefreshLine,
 } from "react-icons/ri";
+import Color from "./components/Color";
 
 function ProductDetails() {
   const { productID } = useParams();
@@ -30,24 +31,30 @@ function ProductDetails() {
   const {
     title,
     price,
-    discount,
     saleCount,
+    discount,
+    img,
     gallery,
     rate,
     reviewsCount,
     stock,
+    colors,
     description,
-    variants,
     specifications,
+    variants,
   } = product;
 
   const [activeImage, setActiveImage] = useState(gallery[0]);
   const [selectedVariant, setSelectedVariant] = useState(variants[0]);
   const [quantity, setQuantity] = useState(1);
+  const [selectedColor, setSelectedColor] = useState(false);
 
   const finalPrice = discount
     ? Math.floor(price - (price * discount) / 100)
     : price;
+
+  console.log(product);
+  console.log(colors);
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-10">
@@ -114,6 +121,9 @@ function ProductDetails() {
 
           {/* Description */}
           <p className="mt-8 text-zinc-600 leading-8">{description}</p>
+
+          {/* Select Color */}
+          <Color colors={product.colors} />
 
           {/* Variants */}
           <div className="mt-8">

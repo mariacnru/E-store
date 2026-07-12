@@ -13,6 +13,13 @@ const homePageProducts = [
     reviewsCount: 127,
     stock: 14,
 
+    colors: [
+      { id: 1, value: "#FFFFFF" },
+      { id: 2, value: "#D4D4D8" },
+      { id: 3, value: "#1F2937" },
+      { id: 4, value: "#8B5CF6" },
+    ],
+
     description:
       "ایرپاد پرو اپل با حذف نویز فعال و کیفیت صدای فوق‌العاده، انتخابی ایده‌آل برای موسیقی و مکالمه روزمره است.",
 
@@ -39,6 +46,13 @@ const homePageProducts = [
     rate: 4.6,
     reviewsCount: 52,
     stock: 7,
+
+    colors: [
+      { id: 1, value: "#FFFFFF" },
+      { id: 2, value: "#D4D4D8" },
+      { id: 3, value: "#1F2937" },
+      { id: 4, value: "#8B5CF6" },
+    ],
 
     description:
       "دوربین حرفه‌ای کانن مناسب عکاسی پرتره، طبیعت و تولید محتوای ویدیویی.",
@@ -68,6 +82,13 @@ const homePageProducts = [
     reviewsCount: 88,
     stock: 20,
 
+    colors: [
+      { id: 1, value: "#FFFFFF" },
+      { id: 2, value: "#D4D4D8" },
+      { id: 3, value: "#1F2937" },
+      { id: 4, value: "#8B5CF6" },
+    ],
+
     description:
       "هدفون بی‌سیم با طراحی ارگونومیک و کیفیت صدای شفاف برای استفاده روزمره و گیمینگ.",
 
@@ -94,6 +115,13 @@ const homePageProducts = [
     rate: 4.9,
     reviewsCount: 65,
     stock: 9,
+
+    colors: [
+      { id: 1, value: "#FFFFFF" },
+      { id: 2, value: "#D4D4D8" },
+      { id: 3, value: "#1F2937" },
+      { id: 4, value: "#8B5CF6" },
+    ],
 
     description:
       "تبلت قدرتمند اپل مناسب طراحی، مطالعه، تماشای فیلم و کارهای حرفه‌ای.",
@@ -123,6 +151,13 @@ const homePageProducts = [
     reviewsCount: 243,
     stock: 5,
 
+    colors: [
+      { id: 1, value: "#FFFFFF" },
+      { id: 2, value: "#D4D4D8" },
+      { id: 3, value: "#1F2937" },
+      { id: 4, value: "#8B5CF6" },
+    ],
+
     description:
       "پرچمدار محبوب اپل با دوربین حرفه‌ای، نمایشگر فوق‌العاده و عملکرد بسیار سریع.",
 
@@ -149,6 +184,13 @@ const homePageProducts = [
     rate: 4.8,
     reviewsCount: 156,
     stock: 11,
+
+    colors: [
+      { id: 1, value: "#FFFFFF" },
+      { id: 2, value: "#D4D4D8" },
+      { id: 3, value: "#1F2937" },
+      { id: 4, value: "#8B5CF6" },
+    ],
 
     description:
       "گوشی پرچمدار سامسونگ با دوربین قدرتمند و نمایشگر باکیفیت AMOLED.",
@@ -178,6 +220,13 @@ const homePageProducts = [
     reviewsCount: 94,
     stock: 17,
 
+    colors: [
+      { id: 1, value: "#FFFFFF" },
+      { id: 2, value: "#D4D4D8" },
+      { id: 3, value: "#1F2937" },
+      { id: 4, value: "#8B5CF6" },
+    ],
+
     description:
       "ساعت هوشمند با قابلیت‌های سلامتی و ورزشی برای استفاده روزمره.",
 
@@ -204,6 +253,13 @@ const homePageProducts = [
     rate: 4.4,
     reviewsCount: 43,
     stock: 8,
+
+    colors: [
+      { id: 1, value: "#FFFFFF" },
+      { id: 2, value: "#D4D4D8" },
+      { id: 3, value: "#1F2937" },
+      { id: 4, value: "#8B5CF6" },
+    ],
 
     description: "ساعت مچی کلاسیک با طراحی لوکس و مناسب استایل رسمی و روزمره.",
 
