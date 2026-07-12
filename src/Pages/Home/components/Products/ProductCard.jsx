@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { RiHeartFill, RiHeartLine } from "react-icons/ri";
 import { WishlistContext } from "../../../../context/WishlistContext";
+import { NavLink } from "react-router";
 
 function ProductCard({
   id,
@@ -87,9 +88,11 @@ function ProductCard({
     "
           />
 
-          <span className="relative z-10 flex items-center justify-center gap-2">
-            افزودن به سبد خرید
-          </span>
+          <NavLink to={`/productDetail/${id}`}>
+            <span className="relative z-10 flex items-center justify-center gap-2">
+              افزودن به سبد خرید
+            </span>
+          </NavLink>
         </button>
       </div>
     </div>

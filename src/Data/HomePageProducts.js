@@ -1,134 +1,221 @@
-export const homePageProducts = [
+const homePageProducts = [
   {
     id: 1,
-    img: "/public/Images/homePageProducts/airpods.png",
     title: "ایرپاد پرو اپل",
     price: 12990000,
     saleCount: 324,
     discount: 15,
+
+    img: "/Images/homePageProducts/airpods.png",
+    gallery: Array(5).fill("/Images/homePageProducts/airpods.png"),
+
+    rate: 4.8,
+    reviewsCount: 127,
+    stock: 14,
+
     description:
       "ایرپاد پرو اپل با حذف نویز فعال و کیفیت صدای فوق‌العاده، انتخابی ایده‌آل برای موسیقی و مکالمه روزمره است.",
-    options: [
-      "حذف نویز فعال (ANC)",
-      "شارژدهی تا 30 ساعت",
-      "مقاوم در برابر آب و تعریق",
-      "پشتیبانی از شارژ بی‌سیم",
-      "بلوتوث نسخه 5.3",
-    ],
+
+    variants: ["سفید"],
+
+    specifications: {
+      برند: "Apple",
+      اتصال: "Bluetooth 5.3",
+      "حذف نویز": "فعال (ANC)",
+      شارژدهی: "30 ساعت",
+      مقاومت: "IPX4",
+    },
   },
+
   {
     id: 2,
-    img: "/public//images/homePageProducts/camera.png",
     title: "دوربین کانن EOS",
     price: 54900000,
     saleCount: 87,
+
+    img: "/Images/homePageProducts/camera.png",
+    gallery: Array(5).fill("/Images/homePageProducts/camera.png"),
+
+    rate: 4.6,
+    reviewsCount: 52,
+    stock: 7,
+
     description:
       "دوربین حرفه‌ای کانن مناسب عکاسی پرتره، طبیعت و تولید محتوای ویدیویی.",
-    options: [
-      "سنسور 24 مگاپیکسلی",
-      "فیلم‌برداری 4K",
-      "فوکوس خودکار سریع",
-      "اتصال Wi-Fi",
-      "نمایشگر لمسی چرخان",
-    ],
+
+    variants: ["Body Only", "Kit Lens"],
+
+    specifications: {
+      برند: "Canon",
+      سنسور: "24MP",
+      ویدئو: "4K",
+      نمایشگر: "لمسی چرخان",
+      اتصال: "Wi-Fi",
+    },
   },
+
   {
     id: 3,
-    img: "/public//images/homePageProducts/headphon.png",
     title: "هدفون بی‌سیم",
     price: 7490000,
     saleCount: 215,
     discount: 20,
+
+    img: "/Images/homePageProducts/headphon.png",
+    gallery: Array(5).fill("/Images/homePageProducts/headphon.png"),
+
+    rate: 4.7,
+    reviewsCount: 88,
+    stock: 20,
+
     description:
       "هدفون بی‌سیم با طراحی ارگونومیک و کیفیت صدای شفاف برای استفاده روزمره و گیمینگ.",
-    options: [
-      "بلوتوث 5.3",
-      "شارژدهی تا 40 ساعت",
-      "میکروفون داخلی",
-      "طراحی تاشو",
-      "پشتیبانی از دستیار صوتی",
-    ],
+
+    variants: ["مشکی", "سفید"],
+
+    specifications: {
+      اتصال: "Bluetooth 5.3",
+      شارژدهی: "40 ساعت",
+      میکروفون: "دارد",
+      طراحی: "تاشو",
+      دستیارصوتی: "پشتیبانی می‌شود",
+    },
   },
+
   {
     id: 4,
-    img: "/public//images/homePageProducts/ipad.png",
     title: "آیپد ایر اپل",
     price: 42900000,
     saleCount: 142,
+
+    img: "/Images/homePageProducts/ipad.png",
+    gallery: Array(5).fill("/Images/homePageProducts/ipad.png"),
+
+    rate: 4.9,
+    reviewsCount: 65,
+    stock: 9,
+
     description:
       "تبلت قدرتمند اپل مناسب طراحی، مطالعه، تماشای فیلم و کارهای حرفه‌ای.",
-    options: [
-      "نمایشگر 10.9 اینچی",
-      "پردازنده Apple M2",
-      "پشتیبانی از Apple Pencil",
-      "حافظه 256 گیگابایت",
-      "باتری با شارژدهی یک روز کامل",
-    ],
+
+    variants: ["128GB", "256GB"],
+
+    specifications: {
+      نمایشگر: "10.9 اینچ",
+      پردازنده: "Apple M2",
+      قلم: "Apple Pencil",
+      حافظه: "256GB",
+      باتری: "تمام روز",
+    },
   },
+
   {
     id: 5,
-    img: "/public//images/homePageProducts/Iphone 14 pro 1.png",
     title: "آیفون 14 پرو",
     price: 79900000,
     saleCount: 491,
     discount: 10,
+
+    img: "/Images/homePageProducts/Iphone 14 pro 1.png",
+    gallery: Array(5).fill("/Images/homePageProducts/Iphone 14 pro 1.png"),
+
+    rate: 4.9,
+    reviewsCount: 243,
+    stock: 5,
+
     description:
       "پرچمدار محبوب اپل با دوربین حرفه‌ای، نمایشگر فوق‌العاده و عملکرد بسیار سریع.",
-    options: [
-      "تراشه A16 Bionic",
-      "دوربین 48 مگاپیکسلی",
-      "نمایشگر Super Retina XDR",
-      "Dynamic Island",
-      "پشتیبانی از 5G",
-    ],
+
+    variants: ["128GB", "256GB", "512GB", "1TB"],
+
+    specifications: {
+      پردازنده: "A16 Bionic",
+      دوربین: "48MP",
+      نمایشگر: "Super Retina XDR",
+      ویژگی: "Dynamic Island",
+      شبکه: "5G",
+    },
   },
+
   {
     id: 6,
-    img: "/public//images/homePageProducts/samsung.png",
     title: "سامسونگ گلکسی S24",
     price: 62900000,
     saleCount: 278,
+
+    img: "/Images/homePageProducts/samsung.png",
+    gallery: Array(5).fill("/Images/homePageProducts/samsung.png"),
+
+    rate: 4.8,
+    reviewsCount: 156,
+    stock: 11,
+
     description:
       "گوشی پرچمدار سامسونگ با دوربین قدرتمند و نمایشگر باکیفیت AMOLED.",
-    options: [
-      "نمایشگر Dynamic AMOLED 2X",
-      "پردازنده Snapdragon",
-      "دوربین سه‌گانه",
-      "باتری 5000 میلی‌آمپرساعتی",
-      "پشتیبانی از 5G",
-    ],
+
+    variants: ["128GB", "256GB", "512GB"],
+
+    specifications: {
+      نمایشگر: "Dynamic AMOLED 2X",
+      پردازنده: "Snapdragon",
+      دوربین: "سه‌گانه",
+      باتری: "5000mAh",
+      شبکه: "5G",
+    },
   },
+
   {
     id: 7,
-    img: "/public//images/homePageProducts/smart watch.png",
     title: "ساعت هوشمند",
     price: 10900000,
     saleCount: 198,
     discount: 25,
+
+    img: "/Images/homePageProducts/smart watch.png",
+    gallery: Array(5).fill("/Images/homePageProducts/smart watch.png"),
+
+    rate: 4.5,
+    reviewsCount: 94,
+    stock: 17,
+
     description:
       "ساعت هوشمند با قابلیت‌های سلامتی و ورزشی برای استفاده روزمره.",
-    options: [
-      "اندازه‌گیری ضربان قلب",
-      "سنجش اکسیژن خون",
-      "GPS داخلی",
-      "مقاوم در برابر آب",
-      "پشتیبانی از تماس و پیامک",
-    ],
+
+    variants: ["مشکی", "نقره‌ای"],
+
+    specifications: {
+      "ضربان قلب": "دارد",
+      "اکسیژن خون": "دارد",
+      GPS: "دارد",
+      مقاومت: "ضد آب",
+      تماس: "پشتیبانی می‌شود",
+    },
   },
+
   {
     id: 8,
-    img: "/public//images/homePageProducts/watch.png",
     title: "ساعت مچی کلاسیک",
     price: 5990000,
     saleCount: 104,
+
+    img: "/Images/homePageProducts/watch.png",
+    gallery: Array(5).fill("/Images/homePageProducts/watch.png"),
+
+    rate: 4.4,
+    reviewsCount: 43,
+    stock: 8,
+
     description: "ساعت مچی کلاسیک با طراحی لوکس و مناسب استایل رسمی و روزمره.",
-    options: [
-      "بند استیل ضد زنگ",
-      "شیشه ضد خش",
-      "مقاومت در برابر آب",
-      "موتور کوارتز دقیق",
-      "طراحی کلاسیک",
-    ],
+
+    variants: ["مشکی", "نقره‌ای", "طلایی"],
+
+    specifications: {
+      بند: "استیل ضد زنگ",
+      شیشه: "ضد خش",
+      مقاومت: "ضد آب",
+      موتور: "کوارتز",
+      طراحی: "کلاسیک",
+    },
   },
 ];
 
