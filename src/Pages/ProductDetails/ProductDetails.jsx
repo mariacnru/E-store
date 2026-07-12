@@ -14,6 +14,7 @@ import {
 import Color from "./components/Color";
 import Variants from "./components/Variants";
 import Price from "./components/Price";
+import Quantity from "./components/Quantity";
 
 function ProductDetails() {
   const { productID } = useParams();
@@ -138,27 +139,7 @@ function ProductDetails() {
           <Price price={price} finalPrice={finalPrice} discount={discount} />
 
           {/* Quantity */}
-          <div className="mt-8 flex items-center gap-4">
-            <span className="text-zinc-600">تعداد:</span>
-
-            <div className="flex items-center border border-zinc-200 rounded-xl overflow-hidden">
-              <button
-                onClick={() => setQuantity((prev) => Math.max(1, prev - 1))}
-                className="w-12 h-12 flex items-center justify-center"
-              >
-                <RiSubtractLine />
-              </button>
-
-              <span className="w-12 text-center">{quantity}</span>
-
-              <button
-                onClick={() => setQuantity((prev) => prev + 1)}
-                className="w-12 h-12 flex items-center justify-center"
-              >
-                <RiAddLine />
-              </button>
-            </div>
-          </div>
+          <Quantity quantity={quantity} setQuantity={setQuantity} />
 
           {/* Buttons */}
           <div className="mt-10 flex gap-4 flex-wrap">
