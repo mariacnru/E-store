@@ -1,11 +1,11 @@
 import React from "react";
 
-function Variants({ variants,selectedVariant, setSelectedVariant }) {
+function Variants({ variants, selectedVariant, setSelectedVariant }) {
   return (
     <div className="mt-8">
       <h3 className="font-medium mb-4">انتخاب مدل</h3>
 
-      <div className="flex flex-wrap gap-3">
+      <div className="grid grid-cols-3 sm:grid-cols-4 gap-3">
         {variants.map((variant) => (
           <button
             key={variant}

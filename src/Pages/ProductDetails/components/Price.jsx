@@ -2,7 +2,7 @@ import React from "react";
 
 function Price({ price, finalPrice, discount }) {
   return (
-    <div className="mt-10 flex items-center gap-4">
+    <div className="mt-10 flex flex-wrap items-center gap-4">
       <span className="text-4xl font-bold">{finalPrice.toLocaleString()}</span>
 
       <span className="text-lg">تومان</span>

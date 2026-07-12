@@ -17,6 +17,7 @@ import Price from "./components/Price";
 import Quantity from "./components/Quantity";
 import Features from "./components/Features";
 import Buttons from "./components/Buttons";
+import Gallery from "./components/Gallery";
 
 function ProductDetails() {
   const { productID } = useParams();
@@ -59,40 +60,13 @@ function ProductDetails() {
     : price;
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-10">
+    <div className="max-w-7xl mx-auto overflow-hidden">
       {/* TOP SECTION */}
-      <div className="grid lg:grid-cols-2 gap-12">
+      <div className="grid lg:grid-cols-2 gap-12 px-4 py-10">
         {/* Gallery */}
-        <div className="flex flex-col-reverse lg:flex-row gap-4">
+        <div className="flex justify-center items-center flex-col-reverse lg:flex-row gap-4">
           {/* Thumbnails */}
-          <div className="flex lg:flex-col gap-3 overflow-auto">
-            {gallery.map((image, index) => (
-              <button
-                key={index}
-                onClick={() => setActiveImage(image)}
-                className={`w-20 h-20 rounded-2xl border overflow-hidden flex-shrink-0 transition-all ${
-                  activeImage === image
-                    ? "border-violet-600"
-                    : "border-zinc-200"
-                }`}
-              >
-                <img
-                  src={image}
-                  className="w-full h-full object-contain p-2"
-                  alt=""
-                />
-              </button>
-            ))}
-          </div>
-
-          {/* Main Image */}
-          <div className="flex-1 bg-zinc-50 rounded-3xl border border-zinc-200 flex items-center justify-center p-10">
-            <img
-              src={activeImage}
-              className="max-h-[500px] object-contain"
-              alt={title}
-            />
-          </div>
+          <Gallery gallery={gallery} />
         </div>
 
         {/* Product Info */}
@@ -141,8 +115,7 @@ function ProductDetails() {
           <Quantity quantity={quantity} setQuantity={setQuantity} />
 
           {/* Buttons */}
-          <Buttons/>
-          
+          <Buttons />
 
           {/* Features */}
           <Features />
@@ -150,10 +123,10 @@ function ProductDetails() {
       </div>
 
       {/* Specifications */}
-      <div className="mt-24">
+      <div className="mt-24 bg-gray-100 px-4 py-10">
         <h2 className="text-2xl font-bold mb-8">مشخصات محصول</h2>
 
-        <div className="border border-zinc-200 rounded-3xl overflow-hidden">
+        <div className="bg-white border border-zinc-200 rounded-3xl overflow-hidden">
           {Object.entries(specifications).map(([key, value]) => (
             <div
               key={key}
@@ -168,13 +141,13 @@ function ProductDetails() {
       </div>
 
       {/* Reviews Placeholder */}
-      <div className="mt-24">
+      {/* <div className="mt-24">
         <h2 className="text-2xl font-bold mb-8">نظرات کاربران</h2>
 
         <div className="border border-zinc-200 rounded-3xl p-10 text-center text-zinc-500">
           هنوز نظری برای این محصول ثبت نشده است.
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -7,8 +7,13 @@ const homePageProducts = [
     discount: 15,
 
     img: "/Images/homePageProducts/airpods.png",
-    gallery: Array(5).fill("/Images/homePageProducts/airpods.png"),
-
+    gallery: [
+      { id: 1, img: "/Images/homePageProducts/airpods.png" },
+      { id: 2, img: "/Images/homePageProducts/camera.png" },
+      { id: 3, img: "/Images/homePageProducts/ipad.png" },
+      { id: 4, img: "/Images/homePageProducts/samsung.png" },
+      { id: 5, img: "/Images/homePageProducts/watch.png" },
+    ],
     rate: 4.8,
     reviewsCount: 127,
     stock: 14,
@@ -41,8 +46,13 @@ const homePageProducts = [
     saleCount: 87,
 
     img: "/Images/homePageProducts/camera.png",
-    gallery: Array(5).fill("/Images/homePageProducts/camera.png"),
-
+    gallery: [
+      { id: 1, img: "/Images/homePageProducts/camera.png" },
+      { id: 2, img: "/Images/homePageProducts/airpods.png" },
+      { id: 3, img: "/Images/homePageProducts/headphon.png" },
+      { id: 4, img: "/Images/homePageProducts/Iphone 14 pro 1.png" },
+      { id: 5, img: "/Images/homePageProducts/smart watch.png" },
+    ],
     rate: 4.6,
     reviewsCount: 52,
     stock: 7,
@@ -76,8 +86,13 @@ const homePageProducts = [
     discount: 20,
 
     img: "/Images/homePageProducts/headphon.png",
-    gallery: Array(5).fill("/Images/homePageProducts/headphon.png"),
-
+    gallery: [
+      { id: 1, img: "/Images/homePageProducts/headphon.png" },
+      { id: 2, img: "/Images/homePageProducts/ipad.png" },
+      { id: 3, img: "/Images/homePageProducts/watch.png" },
+      { id: 4, img: "/Images/homePageProducts/camera.png" },
+      { id: 5, img: "/Images/homePageProducts/samsung.png" },
+    ],
     rate: 4.7,
     reviewsCount: 88,
     stock: 20,
@@ -110,8 +125,13 @@ const homePageProducts = [
     saleCount: 142,
 
     img: "/Images/homePageProducts/ipad.png",
-    gallery: Array(5).fill("/Images/homePageProducts/ipad.png"),
-
+    gallery: [
+      { id: 1, img: "/Images/homePageProducts/ipad.png" },
+      { id: 2, img: "/Images/homePageProducts/airpods.png" },
+      { id: 3, img: "/Images/homePageProducts/headphon.png" },
+      { id: 4, img: "/Images/homePageProducts/samsung.png" },
+      { id: 5, img: "/Images/homePageProducts/watch.png" },
+    ],
     rate: 4.9,
     reviewsCount: 65,
     stock: 9,
@@ -145,8 +165,13 @@ const homePageProducts = [
     discount: 10,
 
     img: "/Images/homePageProducts/Iphone 14 pro 1.png",
-    gallery: Array(5).fill("/Images/homePageProducts/Iphone 14 pro 1.png"),
-
+    gallery: [
+      { id: 1, img: "/Images/homePageProducts/Iphone 14 pro 1.png" },
+      { id: 2, img: "/Images/homePageProducts/airpods.png" },
+      { id: 3, img: "/Images/homePageProducts/camera.png" },
+      { id: 4, img: "/Images/homePageProducts/ipad.png" },
+      { id: 5, img: "/Images/homePageProducts/samsung.png" },
+    ],
     rate: 4.9,
     reviewsCount: 243,
     stock: 5,
@@ -179,8 +204,13 @@ const homePageProducts = [
     saleCount: 278,
 
     img: "/Images/homePageProducts/samsung.png",
-    gallery: Array(5).fill("/Images/homePageProducts/samsung.png"),
-
+    gallery: [
+      { id: 1, img: "/Images/homePageProducts/samsung.png" },
+      { id: 2, img: "/Images/homePageProducts/Iphone 14 pro 1.png" },
+      { id: 3, img: "/Images/homePageProducts/headphon.png" },
+      { id: 4, img: "/Images/homePageProducts/watch.png" },
+      { id: 5, img: "/Images/homePageProducts/airpods.png" },
+    ],
     rate: 4.8,
     reviewsCount: 156,
     stock: 11,
@@ -214,8 +244,13 @@ const homePageProducts = [
     discount: 25,
 
     img: "/Images/homePageProducts/smart watch.png",
-    gallery: Array(5).fill("/Images/homePageProducts/smart watch.png"),
-
+    gallery: [
+      { id: 1, img: "/Images/homePageProducts/smart watch.png" },
+      { id: 2, img: "/Images/homePageProducts/watch.png" },
+      { id: 3, img: "/Images/homePageProducts/samsung.png" },
+      { id: 4, img: "/Images/homePageProducts/airpods.png" },
+      { id: 5, img: "/Images/homePageProducts/ipad.png" },
+    ],
     rate: 4.5,
     reviewsCount: 94,
     stock: 17,
@@ -248,8 +283,13 @@ const homePageProducts = [
     saleCount: 104,
 
     img: "/Images/homePageProducts/watch.png",
-    gallery: Array(5).fill("/Images/homePageProducts/watch.png"),
-
+    gallery: [
+      { id: 1, img: "/Images/homePageProducts/watch.png" },
+      { id: 2, img: "/Images/homePageProducts/smart watch.png" },
+      { id: 3, img: "/Images/homePageProducts/headphon.png" },
+      { id: 4, img: "/Images/homePageProducts/camera.png" },
+      { id: 5, img: "/Images/homePageProducts/Iphone 14 pro 1.png" },
+    ],
     rate: 4.4,
     reviewsCount: 43,
     stock: 8,
