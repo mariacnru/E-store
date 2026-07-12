@@ -15,6 +15,7 @@ import Color from "./components/Color";
 import Variants from "./components/Variants";
 import Price from "./components/Price";
 import Quantity from "./components/Quantity";
+import Features from "./components/Features";
 
 function ProductDetails() {
   const { productID } = useParams();
@@ -55,9 +56,6 @@ function ProductDetails() {
   const finalPrice = discount
     ? Math.floor(price - (price * discount) / 100)
     : price;
-
-  console.log(product);
-  console.log(colors);
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-10">
@@ -154,28 +152,7 @@ function ProductDetails() {
           </div>
 
           {/* Features */}
-          <div className="grid grid-cols-3 gap-4 mt-10">
-            <div className="border border-zinc-200 rounded-2xl p-4 text-center">
-              <RiTruckLine className="mx-auto mb-2 text-violet-600" size={24} />
-              <p className="text-xs text-zinc-600">ارسال سریع</p>
-            </div>
-
-            <div className="border border-zinc-200 rounded-2xl p-4 text-center">
-              <RiShieldCheckLine
-                className="mx-auto mb-2 text-violet-600"
-                size={24}
-              />
-              <p className="text-xs text-zinc-600">ضمانت اصالت</p>
-            </div>
-
-            <div className="border border-zinc-200 rounded-2xl p-4 text-center">
-              <RiRefreshLine
-                className="mx-auto mb-2 text-violet-600"
-                size={24}
-              />
-              <p className="text-xs text-zinc-600">بازگشت کالا</p>
-            </div>
-          </div>
+          <Features />
         </div>
       </div>
 
