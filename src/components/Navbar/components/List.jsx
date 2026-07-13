@@ -24,7 +24,16 @@ function List() {
           درباره ما
         </NavLink>
       </li>
-      <li>ارتباط با ما</li>
+      <li>
+        <NavLink
+          to={"contact"}
+          className={({ isActive }) =>
+            isActive ? "text-black font-danaMedium" : "text-gray-500"
+          }
+        >
+          ارتباط با ما
+        </NavLink>
+      </li>
       <li>بلاگ</li>
     </ul>
   );
