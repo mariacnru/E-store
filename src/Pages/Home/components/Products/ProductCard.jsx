@@ -58,19 +58,29 @@ function ProductCard({
 
         <NavLink
           to={`/productDetail/${id}`}
-          className="group relative overflow-hidden w-full mt-4 py-3.5 rounded-xl bg-zinc-900 text-white text-sm font-danaMedium shadow-[0_8px_24px_rgba(0,0,0,0.18)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_14px_32px_rgba(0,0,0,0.24)] active:translate-y-0 active:scale-[0.98] text-center cursor-pointer"
+          className="
+    group relative overflow-hidden
+    w-full mt-4 h-12
+    rounded-xl bg-zinc-900 text-white text-sm font-danaMedium
+    shadow-[0_8px_24px_rgba(0,0,0,0.18)]
+    transition-all duration-300
+    hover:-translate-y-0.5
+    hover:shadow-[0_14px_32px_rgba(0,0,0,0.24)]
+    active:translate-y-0
+    active:scale-[0.98]
+    flex items-center justify-center
+    cursor-pointer
+  "
         >
-          <button>
-            {/* Shimmer */}
-            <span className="absolute inset-0 translate-x-[-150%] bg-linear-to-r from-transparent via-white/20 to-transparent skew-x-12 transition-transform duration-700 group-hover:translate-x-[150%]" />
+          {/* Shimmer */}
+          <span className="absolute inset-0 translate-x-[-150%] bg-linear-to-r from-transparent via-white/20 to-transparent skew-x-12 transition-transform duration-700 group-hover:translate-x-[150%]" />
 
-            <span className="relative z-10 flex items-center justify-center gap-2">
-              مشاهده محصول
-              <span className="group-hover:-translate-x-1 transition-transform duration-300">
-                <RiArrowLeftLine />
-              </span>
+          <span className="relative z-10 flex items-center gap-2">
+            مشاهده محصول
+            <span className="group-hover:-translate-x-1 transition-transform duration-300">
+              <RiArrowLeftLine />
             </span>
-          </button>
+          </span>
         </NavLink>
       </div>
     </div>

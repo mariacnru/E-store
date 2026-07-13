@@ -5,22 +5,22 @@ function Header() {
   const floatingProducts = [
     {
       id: 1,
-      img: "/Images/homePageProducts/airpods.png",
+      img: "/Images/homePageProducts/airpods.webp",
       className: "-top-8 left-10",
     },
     {
       id: 2,
-      img: "/Images/homePageProducts/camera.png",
+      img: "/Images/homePageProducts/camera.webp",
       className: "top-20 -right-10",
     },
     {
       id: 3,
-      img: "/Images/homePageProducts/headphon.png",
+      img: "/Images/homePageProducts/headphon.webp",
       className: "bottom-16 -left-10",
     },
     {
       id: 4,
-      img: "/Images/homePageProducts/watch.png",
+      img: "/Images/homePageProducts/watch.webp",
       className: "-bottom-8 right-12",
     },
   ];
@@ -108,7 +108,7 @@ function Header() {
             "
             >
               <img
-                src="/Images/homePageProducts/Iphone 14 pro 1.png"
+                src="/Images/homePageProducts/Iphone 14 pro 1.webp"
                 className="
                 w-65
                 hover:scale-110
@@ -116,6 +116,9 @@ function Header() {
                 duration-500
                 drop-shadow-[0_20px_40px_rgba(0,0,0,.25)]
                 "
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
                 alt=""
               />
 
