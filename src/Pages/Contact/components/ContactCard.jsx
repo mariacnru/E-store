@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
 
-function ContactCard() {
+function ContactCard({ icon: Icon, title, text }) {
   return (
-    <div>ContactCard</div>
-  )
+    <div className="bg-white border border-zinc-200 rounded-3xl p-6 text-center shadow-2xl shadow-gray-200">
+      <Icon size={30} className="mx-auto text-violet-600 mb-4" />
+
+      <h3 className="font-bold">{title}</h3>
+
+      <p className="text-zinc-500 mt-3">{text}</p>
+    </div>
+  );
 }
 
-export default ContactCard
+export default ContactCard;
