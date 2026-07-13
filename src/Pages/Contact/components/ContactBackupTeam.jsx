@@ -3,7 +3,7 @@ import { RiCustomerService2Line } from 'react-icons/ri';
 
 function ContactBackupTeam() {
   return (
-    <div className="relative overflow-hidden border border-zinc-200 rounded-3xl min-h-[500px] bg-white flex items-center justify-center">
+    <div className="relative overflow-hidden border border-zinc-200 rounded-3xl min-h-125 bg-white flex items-center justify-center">
       {/* Grid Background */}
       <div
         className="
