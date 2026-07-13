@@ -3,7 +3,7 @@ import React from "react";
 function Color({ colors, setSelectedColor }) {
   return (
     <div className="flex items-center gap-5">
-      <h3 className="">انتخاب رنگ:</h3>
+      <h2 className="">انتخاب رنگ:</h2>
       <div className="flex gap-3">
         {colors?.map((color) => (
           <label key={color.id} className="cursor-pointer">

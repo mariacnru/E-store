@@ -152,16 +152,24 @@ function Form() {
         </div>
 
         <div>
+          <label
+            htmlFor="subject"
+            className="block mb-2 text-sm font-medium text-zinc-700 sr-only"
+          >
+            موضوع پیام
+          </label>
+
           <select
+            id="subject"
             name="subject"
             value={formData.subject}
             onChange={changeHandler}
             className={`w-full h-14 rounded-2xl border px-5 outline-none bg-white transition-all
-            ${
-              errors.subject
-                ? "border-red-400"
-                : "border-zinc-200 focus:border-violet-600"
-            }`}
+    ${
+      errors.subject
+        ? "border-red-400"
+        : "border-zinc-200 focus:border-violet-600"
+    }`}
           >
             <option value="">موضوع پیام را انتخاب کنید</option>
             <option value="support">پشتیبانی</option>
@@ -197,7 +205,7 @@ function Form() {
               <span />
             )}
 
-            <p className="text-sm text-zinc-400">
+            <p className="text-sm text-zinc-700">
               {formData.message.length}/500
             </p>
           </div>

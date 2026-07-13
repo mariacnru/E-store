@@ -17,14 +17,15 @@ function Gallery({ gallery }) {
       {/* Main Image */}
       <img
         src={gallery[activeIndex].img}
-        // alt={title}
+        alt="product-image"
         className="w-full max-h-[500px] object-contain transition-all duration-300"
       />
 
       {/* Prev */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 -translate-y-1/2 right-4 w-11 h-11 rounded-full bg-white shadow-lg flex items-center justify-center hover:scale-110 transition"
+        aria-label="تصویر قبلی"
+        className="absolute top-1/2 -translate-y-1/2 right-0 w-11 h-11 rounded-full bg-white shadow-lg flex items-center justify-center hover:scale-110 transition"
       >
         <RiArrowRightSLine size={28} />
       </button>
@@ -32,13 +33,14 @@ function Gallery({ gallery }) {
       {/* Next */}
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 -translate-y-1/2 left-4 w-11 h-11 rounded-full bg-white shadow-lg flex items-center justify-center hover:scale-110 transition"
+        aria-label="تصویر بعدی"
+        className="absolute top-1/2 -translate-y-1/2 left-0 w-11 h-11 rounded-full bg-white shadow-lg flex items-center justify-center hover:scale-110 transition"
       >
         <RiArrowLeftSLine size={28} />
       </button>
 
       {/* Thumbnails */}
-      <div className="flex justify-center gap-3 mt-8 flex-wrap">
+      <div className="hidden sm:flex justify-center gap-3 mt-8 flex-wrap">
         {gallery.map((image, index) => (
           <button
             key={image.id}
@@ -54,7 +56,7 @@ function Gallery({ gallery }) {
           >
             <img
               src={image.img}
-              alt=""
+              alt="product-image"
               className="w-full h-full object-cover"
             />
           </button>

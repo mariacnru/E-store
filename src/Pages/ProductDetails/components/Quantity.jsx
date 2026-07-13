@@ -9,6 +9,7 @@ function Quantity({ quantity, setQuantity }) {
       <div className="flex items-center border border-zinc-200 rounded-xl overflow-hidden">
         <button
           onClick={() => setQuantity((prev) => Math.max(1, prev - 1))}
+          aria-label="کم کردن"
           className="w-12 h-12 flex items-center justify-center"
         >
           <RiSubtractLine />
@@ -18,6 +19,7 @@ function Quantity({ quantity, setQuantity }) {
 
         <button
           onClick={() => setQuantity((prev) => prev + 1)}
+          aria-label="اضافه کردن"
           className="w-12 h-12 flex items-center justify-center"
         >
           <RiAddLine />
