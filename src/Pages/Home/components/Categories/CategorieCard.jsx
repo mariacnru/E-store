@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router";
 
-function CategorieCard({ icon, title,slug }) {
+function CategorieCard({ icon, title, slug }) {
   return (
     <NavLink
       to={`/products/${slug}`}

@@ -36,7 +36,7 @@ function IconsList() {
         </span>
 
         <ul
-          className={`${like ? "visible opacity-100" : "invisible opacity-0"} absolute top-full bg-gray-100 rounded-xl -right-10 pt-3 px-3 pb-3 space-y-3 w-100 h-fit max-h-78 z-50 opacity-0 invisible transition-all duration-200 overflow-y-auto custom-scrollbar`}
+          className={`${like ? "visible opacity-100" : "invisible opacity-0"} absolute top-8 bg-white border border-gray-100 rounded-xl -right-10 pt-3 px-3 pb-3 space-y-3 w-100 h-fit max-h-78 z-50 opacity-0 invisible transition-all duration-200 overflow-y-auto custom-scrollbar`}
         >
           {wishlist.length > 0 &&
             wishlist.map((item) => (

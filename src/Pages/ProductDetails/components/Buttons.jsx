@@ -6,7 +6,7 @@ function Buttons() {
     <div className="mt-10 flex gap-4 flex-wrap">
       <button
         aria-label="افزودن به سبد خرید"
-        className="flex-1 min-w-50 h-14 rounded-2xl bg-zinc-900 text-white flex items-center justify-center gap-2"
+        className="flex-1 min-w-50 h-14 rounded-2xl bg-zinc-900 text-white flex items-center justify-center gap-2 cursor-pointer"
       >
         <RiShoppingCart2Line />
         افزودن به سبد خرید

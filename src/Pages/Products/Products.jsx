@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import { useParams } from "react-router";
+import homePageProducts from "../../Data/HomePageProducts";
 
 function Products() {
-  return (
-    <div>Products</div>
-  )
+  const { slug } = useParams();
+
+  const products = homePageProducts.filter((item) => item.slug === slug);
+
+  return <div>{products.length}</div>;
 }
 
-export default Products
+export default Products;

@@ -18,7 +18,7 @@ function Gallery({ gallery }) {
       <img
         src={gallery[activeIndex].img}
         alt="product-image"
-        className="w-full max-h-[500px] object-contain transition-all duration-300"
+        className="w-full max-h-125 object-contain transition-all duration-300"
       />
 
       {/* Prev */}
