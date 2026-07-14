@@ -26,7 +26,7 @@ function Header() {
   ];
 
   return (
-    <section className="relative overflow-hidden min-h-screen flex items-center py-10">
+    <section className="relative overflow-hidden min-h-screen flex items-center py-25 md:py-10">
       {/* Grid Background */}
       <div
         className="

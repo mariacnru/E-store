@@ -56,7 +56,7 @@ function MobileNavbar() {
         className="
         lg:hidden
         fixed top-4 left-1/2 -translate-x-1/2
-        z-[999]
+        z-999
         w-[calc(100%-24px)]
         h-16
         rounded-[28px]
@@ -186,7 +186,7 @@ function MobileNavbar() {
           }}
           className="
           fixed inset-0
-          z-[998]
+          z-998
           bg-black/40
           backdrop-blur-sm
         "
@@ -196,7 +196,7 @@ function MobileNavbar() {
       {/* ================= Menu Drawer ================= */}
       <aside
         className={`
-        fixed top-0 right-0 z-[999]
+        fixed top-0 right-0 z-999
         h-screen w-[320px]
         bg-white/90
         backdrop-blur-3xl
@@ -255,7 +255,7 @@ function MobileNavbar() {
       {/* ================= Wishlist Sheet ================= */}
       <div
         className={`
-        fixed bottom-0 left-0 right-0 z-[1000]
+        fixed bottom-0 left-0 right-0 z-1000
         h-[75vh]
         bg-white
         rounded-t-[36px]
@@ -323,7 +323,7 @@ function MobileNavbar() {
       {/* ================= Cart Sheet ================= */}
       <div
         className={`
-        fixed bottom-0 left-0 right-0 z-[1000]
+        fixed bottom-0 left-0 right-0 z-1000
         h-[80vh]
         bg-white
         rounded-t-[36px]
