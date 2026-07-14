@@ -13,7 +13,7 @@ function Products() {
 
   const [currentPage, setCurrentPage] = useState(1);
 
-  const productsPerPage = 4;
+  const productsPerPage = 8;
 
   const pagesCount = Math.ceil(products.length / productsPerPage);
 

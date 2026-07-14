@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 import List from "./components/List";
 import IconsList from "./components/IconsList";
 import Input from "./components/Input";
 
 function LaptopNavbar() {
   return (
-    <nav className="hidden sticky top-0 bg-white/50 backdrop-blur-sm h-15 md:flex md:justify-center lg:justify-evenly items-center lg:px-20 py-2 border-b border-gray-200 z-50">
+    <nav className="hidden sticky top-0 bg-white/50 backdrop-blur-sm h-15 lg:flex md:justify-center lg:justify-evenly items-center lg:px-20 py-2 border-b border-gray-200 z-50">
       <IconsList />
       <List />
       {/* <Input /> */}
@@ -20,4 +20,4 @@ function LaptopNavbar() {
   );
 }
 
-export default LaptopNavbar
+export default LaptopNavbar;

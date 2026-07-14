@@ -14,6 +14,7 @@ import {
   RiHeartFill,
 } from "react-icons/ri";
 
+import { CartContext } from "../../context/CardContext";
 import { WishlistContext } from "../../context/WishlistContext";
 
 function MobileNavbar() {
@@ -22,9 +23,11 @@ function MobileNavbar() {
   const [cartOpen, setCartOpen] = useState(false);
 
   const { wishlist, toggleWishlist } = useContext(WishlistContext);
+  const { cart, addToCart, removeFromCart, totalPrice } =
+    useContext(CartContext);
 
   // موقت تا زمانی که CartContext بسازی
-  const cart = [];
+  const shoppingCart = [...cart];
 
   const links = [
     {
@@ -140,7 +143,7 @@ function MobileNavbar() {
             >
               <RiShoppingCart2Line size={20} />
 
-              {cart.length > 0 && (
+              {shoppingCart.length > 0 && (
                 <span
                   className="
                   absolute
@@ -271,7 +274,7 @@ function MobileNavbar() {
           </button>
         </div>
 
-        <div className="p-5 overflow-y-auto h-[calc(100%-90px)] space-y-4">
+        <div className="custom-scrollbar p-5 overflow-y-auto h-[calc(100%-90px)] space-y-4">
           {wishlist.length > 0 ? (
             wishlist.map((item) => (
               <div
@@ -339,26 +342,65 @@ function MobileNavbar() {
           </button>
         </div>
 
-        {cart.length === 0 ? (
-          <div className="h-full flex flex-col items-center justify-center text-zinc-400">
-            <RiShoppingCart2Line size={48} />
-            <p className="mt-4">سبد خرید شما خالی است</p>
-          </div>
-        ) : (
-          <>
-            <div className="p-5 overflow-y-auto space-y-4 h-[calc(100%-180px)]">
-              {/* Cart Items */}
-            </div>
-
-            <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-zinc-100 bg-white">
-              <div className="flex justify-between mb-4">
-                <span className="text-zinc-500">مبلغ کل</span>
-
-                <span className="font-bold text-xl">۰ تومان</span>
+        <div className="overflow-y-auto h-[calc(100%-90px)] space-y-4">
+          <div className="custom-scrollbar p-5 overflow-y-auto space-y-4 h-[calc(100%-100px)]">
+            {cart.length === 0 ? (
+              <div className="h-full flex flex-col items-center justify-center text-zinc-400">
+                <RiShoppingCart2Line size={48} />
+                <p className="mt-4">سبد خرید شما خالی است</p>
               </div>
+            ) : (
+              cart.map((item) => (
+                <div
+                  key={item.id}
+                  className="
+                flex items-center gap-4
+                p-4 rounded-3xl
+                border border-zinc-100
+                bg-zinc-50
+              "
+                >
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    className="w-20 h-20 object-contain"
+                  />
 
-              <button
-                className="
+                  <div className="flex-1">
+                    <p className="line-clamp-2 text-sm text-zinc-800">
+                      {item.title}
+                    </p>
+
+                    <p className="mt-3 font-bold text-zinc-900">
+                      {item.price.toLocaleString("fa-IR")} تومان
+                    </p>
+                  </div>
+
+                  <div className="flex flex-col gap-3">
+                    <button onClick={() => removeFromCart(item.id)}>
+                      <RiDeleteBinLine
+                        size={20}
+                        className="text-zinc-400 hover:text-red-500"
+                      />
+                    </button>
+                  </div>
+                </div>
+              ))
+            )}
+          </div>
+        </div>
+        <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-zinc-100 bg-white">
+          <div className="flex justify-between mb-4">
+            <span className="text-zinc-500">مبلغ کل</span>
+
+            <span className="font-bold text-xl">
+              {" "}
+              {totalPrice.toLocaleString("fa-IR")} تومان
+            </span>
+          </div>
+
+          <button
+            className="
                 w-full h-14
                 rounded-2xl
                 bg-violet-600
@@ -366,12 +408,10 @@ function MobileNavbar() {
                 font-medium
                 shadow-[0_10px_30px_rgba(139,92,246,.35)]
               "
-              >
-                ادامه فرآیند خرید
-              </button>
-            </div>
-          </>
-        )}
+          >
+            ادامه فرآیند خرید
+          </button>
+        </div>
       </div>
     </>
   );

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useParams } from "react-router";
 import homePageProducts from "../../data/homePageProducts";
 import {
@@ -18,9 +18,11 @@ import Quantity from "./components/Quantity";
 import Features from "./components/Features";
 import Buttons from "./components/Buttons";
 import Gallery from "./components/Gallery";
+import { CartContext } from "../../context/CardContext";
 
 function ProductDetails() {
   const { productID } = useParams();
+  const { cart, addToCart } = useContext(CartContext);
 
   const product = homePageProducts.find(
     (item) => item.id === Number(productID),
@@ -115,8 +117,13 @@ function ProductDetails() {
           <Quantity quantity={quantity} setQuantity={setQuantity} />
 
           {/* Buttons */}
-          <Buttons />
-
+          <Buttons
+            product={product}
+            quantity={quantity}
+            selectedColor={selectedColor}
+            selectedVariant={selectedVariant}
+            addToCart={addToCart}
+          />
           {/* Features */}
           <Features />
         </div>
