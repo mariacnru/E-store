@@ -5,22 +5,22 @@ function Header() {
   const floatingProducts = [
     {
       id: 1,
-      img: "/Images/homePageProducts/airpods.webp",
+      img: "/E-store/Images/homePageProducts/airpods.webp",
       className: "-top-8 left-10",
     },
     {
       id: 2,
-      img: "/Images/homePageProducts/camera.webp",
+      img: "/E-store/Images/homePageProducts/camera.webp",
       className: "top-20 -right-10",
     },
     {
       id: 3,
-      img: "/Images/homePageProducts/headphon.webp",
+      img: "/E-store/Images/homePageProducts/headphon.webp",
       className: "bottom-16 -left-10",
     },
     {
       id: 4,
-      img: "/Images/homePageProducts/watch.webp",
+      img: "/E-store/Images/homePageProducts/watch.webp",
       className: "-bottom-8 right-12",
     },
   ];
@@ -108,7 +108,7 @@ function Header() {
             "
             >
               <img
-                src="/Images/homePageProducts/Iphone 14 pro 1.webp"
+                src="/E-store/Images/homePageProducts/Iphone 14 pro 1.webp"
                 className="
                 w-65
                 hover:scale-110
@@ -150,7 +150,7 @@ function Header() {
             </div>
 
             <div className="block md:hidden">
-              <img src="/public/Images/hero/Iphone Image.webp" alt="" />
+              <img src="/public/E-store/Images/hero/Iphone Image.webp" alt="" />
             </div>
           </div>
         </div>

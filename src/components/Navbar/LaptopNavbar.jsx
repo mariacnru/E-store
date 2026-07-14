@@ -11,7 +11,7 @@ function LaptopNavbar() {
       {/* <Input /> */}
       <div className="flex shrink-0">
         <img
-          src="/Images/logo/Logo_dark.webp"
+          src="/E-store/Images/logo/Logo_dark.webp"
           alt="logo"
           className="w-auto h-7"
         />
