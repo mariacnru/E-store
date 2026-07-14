@@ -201,8 +201,7 @@ function MobileNavbar() {
         className={`
         fixed top-0 right-0 z-999
         h-screen w-[320px]
-        bg-white/90
-        backdrop-blur-3xl
+        bg-white
         border-l border-zinc-100
         transition-all duration-500
         shadow-[-20px_0_60px_rgba(0,0,0,.08)]
