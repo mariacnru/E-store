@@ -1,18 +1,129 @@
-# React + Vite
+# 🛒 E-Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive e-commerce web application built with **React**, **Vite**, and **Tailwind CSS**. The project focuses on clean UI, performance optimization, accessibility, and a smooth user experience across all devices.
 
-Currently, two official plugins are available:
+![Preview](./public/preview.webp)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- 📦 Product listing and category pages
+- 🔍 Product filtering by category
+- 🛍️ Product details page with image gallery
+- ❤️ Wishlist functionality using Context API
+- 🛒 Shopping cart management
+- 📄 Pagination for product lists
+- 📞 Contact page with form validation
+- ❓ FAQ section with accordion interface
+- 📱 Fully responsive design
+- ⚡ Optimized images using WebP format
+- ♿ Improved accessibility and SEO
+- 🚀 Fast development environment with Vite
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+## 🖥️ Pages
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Home
+- Products
+- Product Details
+- About Us
+- Contact Us
+- FAQ
+
+---
+
+## 🛠️ Technologies Used
+
+- React.js
+- React Router
+- Context API
+- Tailwind CSS
+- Vite
+- JavaScript (ES6+)
+- React Icons
+- Git & GitHub
+
+---
+
+## 📂 Project Structure
+
+```text
+src
+│
+├── Components
+├── Context
+├── Data
+├── Layout
+├── Pages
+│   ├── Home
+│   ├── Products
+│   ├── ProductDetails
+│   ├── About
+│   └── Contact
+│
+├── Router.jsx
+└── main.jsx
+```
+
+---
+
+## 🚀 Getting Started
+
+### Clone the repository
+
+```bash
+git clone https://github.com/USERNAME/e-store.git
+```
+
+### Navigate to the project folder
+
+```bash
+cd e-store
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Start development server
+
+```bash
+npm run dev
+```
+
+---
+
+## 📦 Build for Production
+
+```bash
+npm run build
+```
+
+---
+
+## 🌐 Deployment
+
+This project can be deployed easily on:
+
+- Vercel
+- Netlify
+- GitHub Pages
+
+---
+
+## 👩‍💻 Developer
+
+Developed by **Maria**
+
+GitHub:
+https://github.com/mariacnru
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
