@@ -90,8 +90,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         `}),e[25]=a,e[26]=t,e[27]=r,e[28]=M):M=e[28];let ee=`
         fixed top-0 right-0 z-999
         h-screen w-[320px]
-        bg-white/90
-        backdrop-blur-3xl
+        bg-white
         border-l border-zinc-100
         transition-all duration-500
         shadow-[-20px_0_60px_rgba(0,0,0,.08)]
