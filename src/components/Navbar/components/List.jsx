@@ -34,7 +34,16 @@ function List() {
           ارتباط با ما
         </NavLink>
       </li>
-      <li>بلاگ</li>
+      <li>
+        <NavLink
+          to={"products"}
+          className={({ isActive }) =>
+            isActive ? "text-black font-danaMedium" : "text-gray-500"
+          }
+        >
+          همه محصولات
+        </NavLink>
+      </li>
     </ul>
   );
 }

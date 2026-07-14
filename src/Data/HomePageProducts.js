@@ -1,7 +1,7 @@
 const homePageProducts = [
   {
     id: 1,
-    slug: "camera",
+    slug: "headphone",
     title: "ایرپاد پرو اپل",
     price: 12990000,
     saleCount: 324,
@@ -327,9 +327,9 @@ const homePageProducts = [
     price: 68900000,
     saleCount: 182,
     discount: 8,
-    img: "/Images/homePageProducts/iphone15promax.webp",
+    img: "/Images/homePageProducts/Iphone 14 pro 1.webp",
     gallery: [
-      { id: 1, img: "/Images/homePageProducts/iphone15promax.webp" },
+      { id: 1, img: "/Images/homePageProducts/Iphone 14 pro 1.webp" },
       { id: 2, img: "/Images/homePageProducts/iphone15promax.webp" },
       { id: 3, img: "/Images/homePageProducts/samsung.webp" },
       { id: 4, img: "/Images/homePageProducts/ipad.webp" },

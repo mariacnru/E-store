@@ -26,7 +26,7 @@ function Header() {
   ];
 
   return (
-    <section className="relative overflow-hidden min-h-screen flex items-center">
+    <section className="relative overflow-hidden min-h-screen flex items-center py-10">
       {/* Grid Background */}
       <div
         className="
@@ -57,17 +57,17 @@ function Header() {
               نسل جدید تکنولوژی
             </span>
 
-            <h1 className="text-6xl lg:text-6xl font-black leading-tight mt-8">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight mt-8">
               آینده
               <span className="text-violet-600 block">همین حالاست</span>
             </h1>
 
-            <p className="mt-8 text-zinc-600 leading-9 max-w-xl">
+            <p className="mt-8 text-zinc-600 leading-9 text-sm sm:text-base">
               جدیدترین گوشی‌ها، لپ‌تاپ‌ها، ساعت‌های هوشمند و گجت‌های تکنولوژی را
               با ضمانت اصالت، ارسال سریع و بهترین قیمت تجربه کنید.
             </p>
 
-            <div className="flex gap-4 mt-10 flex-wrap">
+            <div className="grid sm:grid-cols-2 gap-4 mt-10">
               <Link
                 to="/products"
                 className="px-8 h-14 rounded-2xl bg-violet-600 text-white flex items-center justify-center hover:scale-105 transition-all duration-300 shadow-2xl shadow-violet-500/30"
@@ -76,7 +76,7 @@ function Header() {
               </Link>
 
               <Link
-                to="/categories"
+                // to=""
                 className="
                 px-8 h-14 rounded-2xl
                 border border-zinc-300
@@ -104,7 +104,7 @@ function Header() {
               backdrop-blur-2xl
               border border-white/50
               shadow-[0_20px_80px_rgba(139,92,246,0.25)]
-              flex items-center justify-center
+              hidden md:flex items-center justify-center
             "
             >
               <img
@@ -147,6 +147,10 @@ function Header() {
                   />
                 </div>
               ))}
+            </div>
+
+            <div className="block md:hidden">
+              <img src="/public/Images/hero/Iphone Image.webp" alt="" />
             </div>
           </div>
         </div>
