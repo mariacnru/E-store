@@ -23,7 +23,7 @@ function Products() {
   const displayedProducts = products.slice(startIndex, endIndex);
 
   return (
-    <div className="px-10 py-15 bg-white">
+    <div className="px-10 py-25 lg:py-15 bg-white">
       <Header slug={slug} listLength={products.length} />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-10">

@@ -62,7 +62,7 @@ function ProductDetails() {
     : price;
 
   return (
-    <div className="max-w-7xl mx-auto overflow-hidden">
+    <div className="max-w-7xl mx-auto overflow-hidden py-20">
       {/* TOP SECTION */}
       <div className="grid lg:grid-cols-2 gap-12 px-4 py-10">
         {/* Gallery */}
