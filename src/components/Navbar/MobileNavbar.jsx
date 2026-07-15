@@ -359,6 +359,7 @@ function MobileNavbar() {
                 bg-zinc-50
               "
                 >
+                  {console.log(item)}
                   <img
                     src={item.img}
                     alt={item.title}
@@ -372,6 +373,10 @@ function MobileNavbar() {
 
                     <p className="mt-3 font-bold text-zinc-900">
                       {item.price.toLocaleString("fa-IR")} تومان
+                    </p>
+
+                    <p className="mt-3 font-bold text-zinc-900">
+                    تعداد:  {item.quantity}
                     </p>
                   </div>
 

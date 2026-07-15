@@ -168,6 +168,10 @@ function IconsList() {
                       <p className="mt-3 text-sm font-semibold text-zinc-900">
                         {item.price.toLocaleString("fa-IR")} تومان
                       </p>
+
+                      <p className="mt-3 font-bold text-zinc-900">
+                        تعداد: {item.quantity}
+                      </p>
                     </div>
 
                     {/* Actions */}
