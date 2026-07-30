@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import { RiHeart3Line, RiShoppingCart2Line } from "react-icons/ri";
+import { WishlistContext } from "../../../context/WishlistContext";
 
 function Buttons({
   product,
@@ -16,6 +17,10 @@ function Buttons({
       selectedVariant,
     });
   };
+
+  const { wishlist, toggleWishlist } = useContext(WishlistContext);
+  const { id, img, title, price, saleCount, discount, description, options } =
+    product;
 
   return (
     <div className="mt-10 flex gap-4 flex-wrap">
@@ -37,6 +42,18 @@ function Buttons({
 
       <button
         aria-label="افزودن به علاقه مندی ها"
+        onClick={() =>
+          toggleWishlist({
+            id,
+            img,
+            title,
+            price,
+            saleCount,
+            discount,
+            description,
+            options,
+          })
+        }
         className="
           w-14 h-14 rounded-2xl
           border border-zinc-200
