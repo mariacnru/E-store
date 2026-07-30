@@ -28,18 +28,25 @@ function Header() {
   return (
     <section className="relative overflow-hidden min-h-screen flex items-center py-25">
       {/* Grid Background */}
-      <div
+      {/* <div
         className="
         absolute inset-0
         bg-[linear-gradient(to_right,#e5e7eb_1px,transparent_1px),
         linear-gradient(to_bottom,#e5e7eb_1px,transparent_1px)]
         bg-size-[60px_60px]
       "
-      />
+      /> */}
 
       {/* Glow */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="w-175 h-175 rounded-full bg-violet-500/20 blur-[150px]" />
+      <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
+        <div
+          className="
+      w-225
+      h-225
+      rounded-full
+      bg-[radial-gradient(circle,rgba(139,92,246,0.3)_0%,rgba(139,92,246,0.18)_25%,rgba(139,92,246,0.08)_50%,rgba(139,92,246,0.02)_70%,transparent_100%)]
+    "
+        />
       </div>
 
       {/* Radial Lines */}
