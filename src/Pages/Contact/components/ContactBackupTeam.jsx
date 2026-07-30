@@ -1,5 +1,5 @@
-import React from 'react'
-import { RiCustomerService2Line } from 'react-icons/ri';
+import React from "react";
+import { RiCustomerService2Line } from "react-icons/ri";
 
 function ContactBackupTeam() {
   return (
@@ -15,11 +15,16 @@ function ContactBackupTeam() {
       />
 
       {/* Glow */}
-      <div className="absolute w-96 h-96 bg-violet-500/15 blur-3xl rounded-full" />
-
+      <div
+        className="absolute w-96 h-96 rounded-full"
+        style={{
+          background:
+            "radial-gradient(rgba(142, 81, 255,0.3) 20%,white 73%, transparent)",
+        }}
+      />
       {/* Content */}
       <div className="relative z-10 text-center px-8">
-        <div className="w-24 h-24 rounded-full bg-violet-100 flex items-center justify-center mx-auto">
+        <div className="w-24 h-24 rounded-full bg-violet-100 flex items-center justify-center mx-auto z-50">
           <RiCustomerService2Line size={42} className="text-violet-600" />
         </div>
 
@@ -51,4 +56,4 @@ function ContactBackupTeam() {
   );
 }
 
-export default ContactBackupTeam
+export default ContactBackupTeam;

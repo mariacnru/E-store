@@ -7,7 +7,13 @@ function Header({ slug, listLength }) {
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)] bg-size-[40px_40px] opacity-40" />
 
       {/* Glow */}
-      <div className="absolute w-96 h-50 bg-violet-500/15 blur-3xl rounded-full" />
+      <div
+        className="absolute w-full h-50"
+        style={{
+          background:
+            "radial-gradient(ellipse at center, rgba(139,92,246,0.18) 0%, rgba(139,92,246,0.1) 35%, rgba(139,92,246,0.04) 60%, transparent 100%)",
+        }}
+      />
 
       {/* Content */}
       <div className="relative z-10 text-center px-8 text-2xl font-danaMedium mt-8">
